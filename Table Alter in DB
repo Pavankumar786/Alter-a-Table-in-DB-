@@ -1,0 +1,28 @@
+mysql> desc pavan;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| PersonID   | int          | YES  |     | NULL    |       |
+| Firstname  | varchar(255) | YES  |     | NULL    |       |
+| Secondname | varchar(255) | YES  |     | NULL    |       |
+| Lastname   | varchar(255) | YES  |     | NULL    |       |
+| Address    | varchar(255) | YES  |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> alter table pavan add email varchar(255);
+Query OK, 0 rows affected (0.51 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc pavan;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| PersonID   | int          | YES  |     | NULL    |       |
+| Firstname  | varchar(255) | YES  |     | NULL    |       |
+| Secondname | varchar(255) | YES  |     | NULL    |       |
+| Lastname   | varchar(255) | YES  |     | NULL    |       |
+| Address    | varchar(255) | YES  |     | NULL    |       |
+| email      | varchar(255) | YES  |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
+6 rows in set (0.10 sec)
